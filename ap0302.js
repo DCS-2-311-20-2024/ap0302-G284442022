@@ -14,7 +14,7 @@ function init() {
     fov: 60, // 視野角
     x: 30,
     y: 10,
-    z: 30,
+    z: 40,
     wireframe: false
   };
 
