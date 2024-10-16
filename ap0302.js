@@ -135,6 +135,7 @@ function init() {
   light1.castShadow = true;
   scene.add(light1);
   const light2 = new THREE.AmbientLight('white',0.5);
+  light2.castShadow = true;
   scene.add(light2);
     
   // カメラの設定
@@ -145,6 +146,7 @@ function init() {
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( 0x406080 );
+  renderer.shadowMap.enabled=true;
   document.getElementById("WebGL-output")
     .appendChild(renderer.domElement);
 
